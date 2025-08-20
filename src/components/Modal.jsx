@@ -23,8 +23,8 @@ const Modal = ({ agent, onClose }) => {
             {agent.rating}
             <span className="modal-reviews"> ({agent.reviews}) Leave a review</span>
           </div>
-          <p className="modal-location">📍 {agent.location}</p>
-          <p className="modal-website">🌐 {agent.website}</p>
+          <p className="modal-location">{agent.location}</p>
+          <p className="modal-website">{agent.website}</p>
           <div className="modal-services">
             {agent.services.split(", ").map((service, index) => (
               <span key={index} className="modal-service-tag">{service}</span>

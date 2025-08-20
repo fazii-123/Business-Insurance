@@ -17,6 +17,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1000;
+  font-family: 'Inter', sans-serif; 
 }
 
 .modal-content {
@@ -29,6 +30,7 @@
   position: relative;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   animation: fadeIn 0.3s ease-in-out;
+  font-family: 'Inter', sans-serif; 
 }
 
 .modal-left-panel {
@@ -95,6 +97,7 @@
   line-height: 1.5;
   color: var(--dark-text-color);
   margin-bottom: 15px;
+  font-weight: 400;
 }
 
 .modal-rating {
