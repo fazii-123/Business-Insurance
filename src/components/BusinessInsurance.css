@@ -170,6 +170,11 @@
   cursor: pointer;
   transition: var(--transition);
   width: 100%;
+  text-align: left;
+}
+
+.send-message-btn span{
+  align-items: end;
 }
 
 .send-message-btn:hover {
@@ -180,7 +185,7 @@
   background: var(--white);
   padding: 30px;
   border-radius: 12px;
-  border: 1px solid var(--muted-gray);
+  border: 0.5px solid var(--muted-gray);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: left;
 }
@@ -201,21 +206,23 @@
   font-size: 15px;
   color: var(--muted-gray);
   line-height: 1.6;
+  font-weight: 200;
 }
 
 /* Policy Grid */
 .policy-grid-center {
   margin-top: 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr ;
   gap: 12px;
+  font-weight: 400;
 }
 
 .policy-item-center {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 14px;
+  font-size: 17px;
   color: var(--dark-text-color);
 }
 

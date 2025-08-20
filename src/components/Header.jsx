@@ -49,7 +49,7 @@ const Header = () => {
             </div>
           </li>
           <li className="dropdown">
-            <Link to="./taxi insurance" className="dropdown-link">
+            <Link to="/taxi-insurance" className="dropdown-link">
               <button className="dropdown-toggle">
                 Taxi Insurance <span className="arrow">▾</span>
               </button>

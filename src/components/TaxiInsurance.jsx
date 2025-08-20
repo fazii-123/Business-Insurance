@@ -1,7 +1,7 @@
 import React from "react";
 import "./BusinessInsurance.css";
 import { FaCheckCircle } from "react-icons/fa";
-import businessImage from "../assets/businessImage.png";
+import taxiInsurance from "../assets/taxiInsurance.jpg";
 import phoneIcon from "../assets/phone-icon.png";
 import Footer from "./footer"
 
@@ -14,23 +14,23 @@ const insuranceTypes = [
 ];
 
 const policyList = [
-  "Business Owners Policy",
-  "Professional Liability Insurance",
-  "Business Umbrella Insurance",
-  "Small Business Insurance",
-  "Workers' Compensation Insurance",
-  "Commercial and Auto Insurance",
+  "Black Car Insurance",
+  "Uber Insurance Livery",
+  "Vehicle Insurance",
+  "Green Taxi Insurance",
+  "Yellow Taxicab Insurance",
+  "NYC Rideshare Insurance",
 ];
 
-const BusinessInsurance = () => {
+const TaxiInsurance = () => {
   return (
     <div className="page-container">
       {/* Header */}
       <header className="header-section">
         <div className="header-content">
-          <h1>Business Insurance</h1>
+          <h1>Taxi Insurance</h1>
           <nav className="breadcrumb">
-            <a href="/">Home</a> &gt; <span>Business Insurance</span>
+            <a href="/">Home</a> &gt; <span>Taxi Insurance</span>
           </nav>
         </div>
       </header>
@@ -39,13 +39,13 @@ const BusinessInsurance = () => {
       <main className="main-image-content">
         <div className="image-container">
           <img
-            src={businessImage}
+            src={taxiInsurance}
             alt="A smiling insurance agent talking to a client."
           />
         </div>
       </main>
 
-      {/* Layout: Left Sidebar | Center Content | Right Sidebar */}
+
       <div className="main-content-layout">
         {/* Left Sidebar */}
         <aside className="left-sidebar">
@@ -78,53 +78,44 @@ const BusinessInsurance = () => {
         <section className="center-content">
           <h2>Comprehensive Coverage and Support</h2>
           <p>
-            At Business Insurance Exchange, we are dedicated to delivering
-            Business Insurance solutions that protect every aspect of your
-            operations. Our expert team combines industry knowledge with
-            personalized service to address your specific risks, ensuring robust
-            protection and seamless support.
+            At Business Insurance Exchange, we are committed to delivering Taxi Insurance solutions that meet the unique needs of for-hire drivers and vehicle owners in NYC. Our expert team combines deep industry knowledge with personalized service to ensure compliance with Taxi regulations and robust protection for your operations.
           </p>
 
-          <h3>Commercial and Auto Insurance</h3>
+          <h3>Black Car Insurance</h3>
           <p>
-            Protects your business vehicles with coverage for accidents, theft,
-            and liabilities, keeping your operations mobile and compliant.
+           Provides coverage for black car drivers, including liability and property damage, tailored for pre-arranged rides through dispatch services like Uber or Lyft, ensuring Taxi compliance.
+           </p>
+          <h3>Uber Insurance</h3>
+          <p>
+            Specialized coverage for Uber drivers, meeting Taxi requirements with liability, personal injury protection, and uninsured motorist coverage for all phases of rideshare driving.
+          </p>
+          <h3>Livery Vehicle Insurance</h3>
+          <p>
+           Protects livery vehicles offering pre-arranged rides, covering up to six passengers with liability and property damage coverage, compliant with Taxi standards.
           </p>
 
-          <h3>Professional Liability Insurance</h3>
+          <h3>Compliance and Operations</h3>
           <p>
-            Safeguards your business against claims of negligence or errors in
-            professional services, covering legal fees and settlements.
+            Stay on the road with confidence with Business Insurance Exchange’s Taxi Insurance. {" "}
+            <a href="/Contact">Contact us today</a> to learn how we can help you meet Taxi requirements and protect your for-hire business with tailored coverage.
+            confidence.
           </p>
 
-          <h3>Workers' Compensation Insurance</h3>
+          <h3>Green Taxi Insurance</h3>
           <p>
-            Provides coverage for employee injuries or illnesses, covering
-            medical costs and lost wages to ensure workplace safety and
-            compliance.
+           Ensures coverage for Green Taxis operating in outer boroughs, meeting Taxi’s minimum liability requirements of $100,000 per person and $300,000 per accident, plus personal injury protection.
           </p>
 
-          <h3>Protection and Peace of Mind</h3>
+          <h3>Yellow Taxicab Insurance</h3>
           <p>
-            Keep your business secure with Business Insurance Exchange's
-            comprehensive Business Insurance solutions.{" "}
-            <a href="/Contact">Contact us today</a> to learn how we can tailor coverage
-            to protect your operations and support your growth with confidence.
+           Provides comprehensive coverage for NYC’s iconic Yellow Taxis, including liability, personal injury protection, and workers’ compensation, meeting Taxi’s strict standards for street-hail services.
           </p>
-          <h3>Small Business Insurance</h3>
+
+          <h3>NYC Rideshare Insurance</h3>
           <p>
-            Offers tailored coverage for small businesses, combining liability, property, and other protections to suit your unique needs.
-          </p>
-          <h3>Business Umbrella Insurance</h3>
-          <p>
-            Extends coverage beyond standard policies, providing extra protection against large claims or lawsuits to safeguard your assets.
-          </p>
-          <h3>Business Owners Policy</h3>
-          <p>
-            Combines property, liability, and business interruption coverage into one convenient policy, streamlining protection for your business.
+           Offers tailored coverage for rideshare drivers across platforms like Uber and Lyft, ensuring compliance with Taxi regulations and protection during all driving phases.
           </p>
           <hr />
-
         </section>
 
         {/* Right Sidebar */}
@@ -141,7 +132,7 @@ const BusinessInsurance = () => {
               </button>
             ))}
           </div>
-           <div className="policy-grid-center">
+          <div className="policy-grid-center">
             {policyList.map((policy, index) => (
               <div key={index} className="policy-item-center">
                 <FaCheckCircle className="check-icon" />
@@ -153,8 +144,7 @@ const BusinessInsurance = () => {
       </div>
       <Footer/>
     </div>
-    
   );
 };
 
-export default BusinessInsurance;
+export default TaxiInsurance;

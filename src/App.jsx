@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import Contact from "./components/Contact";
 import "./App.css";
 import BusinessInsurance from "./components/BusinessInsurance";
+import TaxiInsurance from "./components/TaxiInsurance";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/business-insurance" element={<BusinessInsurance/>} />
+          <Route path="/taxi-insurance" element={<TaxiInsurance/>} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
