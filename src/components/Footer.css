@@ -1,0 +1,134 @@
+/* Define the new color palette with CSS variables */
+:root {
+    --base-color: #f8f8f8; /* Very light gray/off-white from the image */
+    --light-peach: #E4D8C7; /* A light beige/peach color */
+    --muted-gray: #A29E93; /* Muted gray/brown tone */
+    --dark-text-color: #2D2727; /* Dark charcoal/black from the image */
+}
+
+.footer {
+    background: var(--dark-text-color);
+    color: var(--base-color);
+    padding: 50px 20px 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-about {
+    flex: 1 1 300px;
+}
+
+.footer-logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: var(--muted-gray);
+}
+
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    color: var(--base-color);
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: var(--base-color);
+    color: var(--dark-text-color);
+}
+
+.footer-links {
+    flex: 2 1 500px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    min-width: 160px;
+}
+
+.footer-links h4 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: var(--base-color);
+    text-align: left;
+}
+
+.footer-links a {
+    display: block;
+    font-size: 14px;
+    color: var(--light-peach);
+    text-decoration: none;
+    margin-bottom: 8px;
+    transition: color 0.3s ease;
+    text-align: left;
+
+}
+
+.footer-links a:hover {
+    color: var(--base-color);
+}
+
+/* Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-btn {
+    background: var(--muted-gray);
+    color: var(--dark-text-color);
+    border: none;
+    padding: 12px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-btn:hover {
+    background: var(--light-peach);
+    color: var(--dark-text-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
