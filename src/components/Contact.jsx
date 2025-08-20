@@ -96,7 +96,6 @@ const Contact = () => {
               <h2>Chat With Us</h2>
               <p className="contact-info-heading">Our Contact Information</p>
               <div className="contact-detail">
-                {/* Phone SVG Icon */}
                 <svg
                   className="icon-svg"
                   xmlns="http://www.w3.org/2000/svg"

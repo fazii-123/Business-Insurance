@@ -19,37 +19,8 @@ const Home = () => {
 
   return (
     <div className="home-container">
-       <div className="hero-section">
-      <HeroSection/>
-      {/* <div className="hero-left">
-        <h1 className="hero-heading">
-         AI helps you find perfect Business Insurance..
-        </h1>
-        <p className="hero-subtext">
-          Type your questions below to get instant, intelligent answers and find the perfect coverage for your business.
-        </p>
-
-        <div className="search-bar-container">
-          <input
-            type="text"
-            placeholder="How much does TLC insurance cost for fleet?"
-            className="search-input"
-          />
-          <button className="search-button">
-            <FaSearch />
-          </button>
-        </div>
-
-        <div className="suggestion-buttons">
-          <button className="suggestion-btn">General Liability<span> →</span></button>
-          <button className="suggestion-btn">Analyze Risk<span> →</span></button>
-          <button className="suggestion-btn">Commercial Auto<span> →</span></button>
-        </div>
-      </div> */}
-      
-      {/* <div className="hero-right">
-        <img src={fazii} alt="AI Business Insurance" />
-      </div> */}
+      <div className="hero-section">
+        <HeroSection />
       </div>
       <div className="info-section">
         <div className="info-left">
@@ -67,7 +38,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Right side */}
         <div className="info-right">
           <div className="tabs">
             <button
@@ -139,7 +109,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* What We Offer Section */}
       <div className="offer-section">
         <p className="offer-label">... WHAT WE OFFER</p>
         <h1 className="offer-heading">
@@ -199,7 +168,6 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Agents Section */}
       <div className="agents-section">
         <div className="agents-content">
           <p className="agents-label">... OUR AGENTS</p>
@@ -292,7 +260,6 @@ const Home = () => {
         </div>
 
         <div className="pricing-cards-container">
-          {/* Free Plan Card */}
           <div className="pricing-card free-plan">
             <div className="card-header">
               <h3 className="plan-name">Trial Plan</h3>
@@ -314,7 +281,6 @@ const Home = () => {
             </ul>
           </div>
 
-          {/* Growth Plan Card */}
           <div className="pricing-card growth-plan">
             <div className="card-header">
               <h3 className="plan-name">Growth Plan</h3>
@@ -338,7 +304,6 @@ const Home = () => {
             </ul>
           </div>
 
-          {/* Premium Plan Card */}
           <div className="pricing-card premium-plan">
             <div className="card-header">
               <h3 className="plan-name">Premium Plan</h3>
@@ -362,7 +327,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

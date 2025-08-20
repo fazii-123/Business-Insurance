@@ -6,7 +6,6 @@
 
 }
 
-/* FLEX for left & right */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -106,7 +105,6 @@
 
 .hero-right img {
     max-width: 80%;
-    /* height: auto; */
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
@@ -126,7 +124,6 @@
     align-items: flex-start;
 }
 
-/* Left Side */
 .info-left {
     flex: 1;
     min-width: 320px;
@@ -175,7 +172,6 @@
     font-size: 0.9rem;
 }
 
-/* Right Side */
 .info-right {
     flex: 1;
     min-width: 320px;
@@ -254,7 +250,6 @@
     background: #001540;
 }
 
-/* ================= WHAT WE OFFER SECTION ================= */
 .offer-section {
     text-align: center;
     padding: 60px 20px;
@@ -325,7 +320,6 @@
     margin-bottom: 15px;
 }
 
-/* ================= INSURANCE CARDS SECTION ================= */
 .insurance-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -374,7 +368,6 @@
     margin-bottom: auto;
 }
 
-/* ================= UNIFIED BUTTON ================= */
 .quote-btn {
     margin-top: 20px;
     background: #2D2727;
@@ -393,7 +386,6 @@
     transform: translateY(-2px);
 }
 
-/* ====== Section Wrapper ====== */
 .agents-section {
   display: flex;
   align-items: center;
@@ -405,7 +397,6 @@
   font-weight: 400;
 }
 
-/* ====== Left Column (Text) ====== */
 .agents-content {
   flex: 1;
   text-align: left;
@@ -491,7 +482,6 @@
   color: #fff;
 }
 
-/* ====== Right Column (Images Grid) ====== */
 .agents-grid {
   flex: 1;
   display: grid;
@@ -540,7 +530,6 @@
   color: #2D2727;
 }
 
-/* General Page Styles */
 :root {
   --base-color: #f8f8f8;
   --light-peach: #E4D8C7;
@@ -554,7 +543,6 @@
   padding: 50px 20px;
 }
 
-/* Header Section */
 .pricing-header {
   max-width: 900px;
   margin: 0 auto 40px;
@@ -572,7 +560,6 @@
   line-height: 1.5;
 }
 
-/* Toggle Buttons */
 .pricing-toggle {
   display: inline-flex;
   background-color: #fff;
@@ -599,7 +586,6 @@
   color: #fff; 
 }
 
-/* Pricing Cards Container */
 .pricing-cards-container {
   display: flex;
   justify-content: center;
@@ -607,7 +593,6 @@
   flex-wrap: wrap;
 }
 
-/* Individual Card Styles */
 .pricing-card {
   background-color: #fff;
   border-radius: 10px;
@@ -688,14 +673,13 @@
 }
 
 .plan-features li:before {
-  content: '✓'; /* Checkmark icon */
+  content: '✓'; 
   color: #2D2727;
   position: absolute;
   left: 0;
   font-weight: bold;
 }
 
-/* Specific Plan Styles */
 .growth-plan {
   background-color: #2D2727;
   color: #f8f8f8f8;
@@ -724,7 +708,7 @@
 .growth-plan .get-started-button:hover {
   background-color: var(--muted-gray);
 }
-/* ====== Responsive ====== */
+
 @media (max-width: 992px) {
   .agents-section {
     flex-direction: column;

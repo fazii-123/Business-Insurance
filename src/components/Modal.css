@@ -145,35 +145,3 @@
   transform: scale(1.2);
   color: var(--muted-gray);
 }
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-content {
-    flex-direction: column;
-    width: 90%;
-  }
-
-  .modal-left-panel {
-    border-right: none;
-    border-bottom: 1px solid var(--muted-gray);
-  }
-
-  .modal-profile-img-container {
-    width: 100px;
-    height: 100px;
-  }
-
-  .modal-right-panel {
-    padding: 15px;
-  }
-}

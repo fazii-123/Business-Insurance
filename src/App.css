@@ -1,4 +1,3 @@
-/* src/App.css */
 
 body {
   margin: 0;
@@ -12,5 +11,5 @@ body {
 }
 
 main {
-  padding-top: 20px; /* Add some space below the header */
+  padding-top: 20px; 
 }

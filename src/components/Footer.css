@@ -1,9 +1,9 @@
-/* Define the new color palette with CSS variables */
+
 :root {
-    --base-color: #f8f8f8; /* Very light gray/off-white from the image */
-    --light-peach: #E4D8C7; /* A light beige/peach color */
-    --muted-gray: #A29E93; /* Muted gray/brown tone */
-    --dark-text-color: #2D2727; /* Dark charcoal/black from the image */
+    --base-color: #f8f8f8; 
+    --light-peach: #E4D8C7; 
+    --muted-gray: #A29E93; 
+    --dark-text-color: #2D2727; 
 }
 
 .footer {
@@ -97,7 +97,7 @@
     color: var(--base-color);
 }
 
-/* Bottom Section */
+
 .footer-bottom {
     text-align: center;
     margin-top: 40px;
@@ -118,17 +118,4 @@
 .footer-btn:hover {
     background: var(--light-peach);
     color: var(--dark-text-color);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .footer-links {
-        flex-direction: column;
-        gap: 20px;
-    }
 }
