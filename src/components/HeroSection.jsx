@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./HeroSection.css";
+import "./Home.css";
 import { FaSearch } from "react-icons/fa";
 import Modal from "./Modal";
 import agent1 from "../assets/agent1.jpg";
@@ -110,7 +110,7 @@ const HeroSection = () => {
           <div id="image5" className="image-card" onClick={() => handleImageClick("agent4")}><img src={agent4} alt="Person 5" /></div>
           <div id="image6" className="image-card" onClick={() => handleImageClick("agent3")}><img src={agent3} alt="Person 6" /></div>
         </div>
-        <div className=" hero-search-bar">
+        <div className=" -search-bar">
           <input
             type="text"
             placeholder="How much does TLC insurance cost for fleet?"
