@@ -3,7 +3,7 @@ import "./BusinessInsurance.css";
 import { FaCheckCircle, FaChevronDown, FaChevronUp, FaSearch } from "react-icons/fa";
 import businessImage from "../assets/businessImage.png";
 import phoneIcon from "../assets/phone-icon.png";
-import Footer from "./footer";
+import Footer from "./Footer";
 
 const insuranceTypes = [
   {

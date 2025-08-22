@@ -11,7 +11,7 @@ import agent1 from "../assets/agent1.jpg";
 import agent2 from "../assets/agent2.jpg";
 import agent3 from "../assets/agent3.jpg";
 import agent4 from "../assets/agent4.jpg";
-import Footer from "./footer";
+import Footer from "./Footer";
 import HeroSection from "./HeroSection";
 
 const Home = () => {

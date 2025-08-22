@@ -4,7 +4,7 @@ import supportIcon from "../assets/support-icon.png";
 import phoneIcon from "../assets/phone-icon.png";
 import briefcaseIcon from "../assets/cooperation.png";
 import branchIcon from "../assets/branch-icon.png";
-import Footer from "./footer"
+import Footer from "./Footer"
 import whyBizImage from "../assets/biz-image.jpg"; 
 
 const Contact = () => {
