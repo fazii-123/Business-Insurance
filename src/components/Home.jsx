@@ -1,26 +1,89 @@
 import React, { useState } from "react";
 import "./Home.css";
 import { FaSearch, FaCheckCircle } from "react-icons/fa";
-import handshakeImg from "../assets/handshake.jpg";
-import chartImg from "../assets/chart.jpg";
-import liabilityImg from "../assets/liability.png";
-import autoImg from "../assets/auto.png";
-import smallBizImg from "../assets/smallbiz.png";
-import umbrellaImg from "../assets/umbrella.png";
-import agent1 from "../assets/agent1.jpg";
-import agent2 from "../assets/agent2.jpg";
-import agent3 from "../assets/agent3.jpg";
-import agent4 from "../assets/agent4.jpg";
+import handshakeImg from "../assets/img/handshake.jpg";
+import chartImg from "../assets/img/chart.jpg";
+import liabilityImg from "../assets/img/liability.png";
+import autoImg from "../assets/img/auto.png";
+import smallBizImg from "../assets/img/smallbiz.png";
+import umbrellaImg from "../assets/img/umbrella.png";
+import agent1 from "../assets/img/agent1.jpg";
+import agent2 from "../assets/img/agent2.jpg";
+import agent3 from "../assets/img/agent3.jpg";
+import agent4 from "../assets/img/agent4.jpg";
 import Footer from "./Footer";
 import HeroSection from "./HeroSection";
+import Modal from "./Modal";
+
+const agentData = [
+  {
+    id: "agent1",
+    name: "Eliana Wilson",
+    title: "Business Insurance",
+    description: "Voluptate veniam mo.",
+    rating: 4.8,
+    reviews: (9),
+    location: "Washington D.C. in 1966",
+    services: "Business Insurance, Taxi Insurance, Auto Insurance",
+    image: agent1,
+  },
+  {
+    id: "agent2",
+    name: "Agent Aria",
+    title: "Taxi Insurance",
+    description: "Infiltration & Espionage",
+    rating: 4.6,
+    reviews: (9),
+    location: " New York in 1966",
+
+    services: "Small Business Insurance, Liability, Umbrella",
+    image: agent2,
+  },
+  {
+    id: "agent3",
+    name: "David Brown",
+    title: "Insurance Specialist",
+    description: "Focused on taxi fleet and auto coverage.",
+    rating: 4.7,
+    reviews: 150,
+    location: "Los Angeles, USA",
+
+    services: "Taxi Insurance, Fleet Insurance, Commercial Auto",
+    image: agent3,
+  },
+  {
+    id: "agent4",
+    name: "Emma Wilson",
+    title: "Agency Partner",
+    description: "Partnering with businesses for long-term success.",
+    rating: 4.9,
+    reviews: 200,
+    location: "Houston, USA",
+    services: "Workers' Compensation, Umbrella, General Liability",
+    image: agent4,
+  },
+];
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("history");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedAgent, setSelectedAgent] = useState(null);
+
+  const handleImageClick = (id) => {
+    const agent = agentData.find((a) => a.id === id);
+    setSelectedAgent(agent);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedAgent(null);
+  };
 
   return (
     <div className="home-container">
       <div className="hero-section">
-        <HeroSection/>
+        <HeroSection />
       </div>
       <div className="info-section">
         <div className="info-left">
@@ -102,13 +165,10 @@ const Home = () => {
           </ul>
 
           <img src={chartImg} alt="Chart" className="side-image" />
-
           <hr />
-
           <button className="learn-btn">Learn More About us →</button>
         </div>
       </div>
-
       <div className="offer-section">
         <p className="offer-label">... WHAT WE OFFER</p>
         <h1 className="offer-heading">
@@ -118,11 +178,7 @@ const Home = () => {
 
         <div className="offer-grid">
           <div className="offer-card">
-            <img
-              src={liabilityImg}
-              alt="Liability"
-              className="offer-card-img"
-            />
+            <img src={liabilityImg} alt="Liability" className="offer-card-img" />
             <h3>Professional Liability Insurance</h3>
             <p>
               Secure Errors and Omissions (E&O) coverage to protect New York
@@ -167,7 +223,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      
       <div className="agents-section">
         <div className="agents-content">
           <p className="agents-label">... OUR AGENTS</p>
@@ -180,6 +236,37 @@ const Home = () => {
             solutions, and we need expert agents like you to be part of our
             growing network.
           </p>
+
+          <div className="hero-images">
+            <div
+              id="image1"
+              className="image-card"
+              onClick={() => handleImageClick("agent1")}
+            >
+              <img src={agent1} alt="Person 1" />
+            </div>
+            <div
+              id="image2"
+              className="image-card"
+              onClick={() => handleImageClick("agent2")}
+            >
+              <img src={agent2} alt="Person 2" />
+            </div>
+            <div
+              id="image5"
+              className="image-card"
+              onClick={() => handleImageClick("agent4")}
+            >
+              <img src={agent4} alt="Person 5" />
+            </div>
+            <div
+              id="image6"
+              className="image-card"
+              onClick={() => handleImageClick("agent3")}
+            >
+              <img src={agent3} alt="Person 6" />
+            </div>
+          </div>
 
           <h3 className="why-join-heading">Why Join us</h3>
           <ul className="why-join-list">
@@ -207,38 +294,11 @@ const Home = () => {
           <button className="join-btn">Join as an Agent →</button>
         </div>
 
-        <div className="agents-grid">
-          <div className="agent-card">
-            <img src={agent1} alt="Agent 1" />
-            <div className="agent-info">
-              <p>Eliana Wilson</p>
-              <span>→</span>
-            </div>
-          </div>
-          <div className="agent-card">
-            <img src={agent2} alt="Agent 2" />
-            <div className="agent-info">
-              <p>Agent Aria</p>
-              <span>→</span>
-            </div>
-          </div>
-          <div className="agent-card">
-            <img src={agent3} alt="Agent 3" />
-            <div className="agent-info">
-              <p>Agent Nova</p>
-              <span>→</span>
-            </div>
-          </div>
-          <div className="agent-card">
-            <img src={agent4} alt="Agent 4" />
-            <div className="agent-info">
-              <p>Agent Leo</p>
-              <span>→</span>
-            </div>
-          </div>
-        </div>
+        {/* ✅ Modal */}
+        {isModalOpen && <Modal agent={selectedAgent} onClose={closeModal} />}
       </div>
 
+      {/* Pricing Section */}
       <div className="pricing-page">
         <div className="pricing-header">
           <p className="offer-label">... OUR PRICING</p>
@@ -327,6 +387,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import "./Home.css";
 import { FaSearch } from "react-icons/fa";
 import Modal from "./Modal";
-import agent1 from "../assets/agent1.jpg";
-import agent2 from "../assets/agent2.jpg";
-import agent3 from "../assets/agent3.jpg";
-import agent4 from "../assets/agent4.jpg";
-import handshakeImg from "../assets/handshake.jpg";
-import chartImg from "../assets/chart.jpg";
+import agent1 from "../assets/img/agent1.jpg";
+import agent2 from "../assets/img/agent2.jpg";
+import agent3 from "../assets/img/agent3.jpg";
+import agent4 from "../assets/img/agent4.jpg";
+import handshakeImg from "../assets/img/handshake.jpg";
+import chartImg from "../assets/img/chart.jpg";
 
 const agentData = {
   agent1: {

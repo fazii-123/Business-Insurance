@@ -2,8 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import logo from "../assets/biz-logo-white.png"; 
-
+import logo from "../assets/img/biz-logo-white.png"; 
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa"; 
 import { FaXTwitter } from "react-icons/fa6"; 
 

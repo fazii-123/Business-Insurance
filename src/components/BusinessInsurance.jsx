@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./BusinessInsurance.css";
 import { FaCheckCircle, FaChevronDown, FaChevronUp, FaSearch } from "react-icons/fa";
-import businessImage from "../assets/businessImage.png";
-import phoneIcon from "../assets/phone-icon.png";
+import businessImage from "../assets/img/businessImage.png";
+import phoneIcon from "../assets/img/phone-icon.png";
 import Footer from "./Footer";
 
 const insuranceTypes = [

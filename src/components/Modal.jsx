@@ -15,8 +15,11 @@ const Modal = ({ agent, onClose }) => {
             <img src={agent.image} alt={agent.name} className="modal-profile-img" />
           </div>
         </div>
+
         <div className="modal-right-panel">
-          <h2 className="modal-name">{agent.name} <span className="modal-title-tag">{agent.title}</span></h2>
+          <h2 className="modal-name">
+            {agent.name} <span className="modal-title-tag">{agent.title}</span>
+          </h2>
           <p className="modal-description">{agent.description}</p>
           <div className="modal-rating">
             {"⭐".repeat(Math.floor(agent.rating))}
@@ -30,7 +33,19 @@ const Modal = ({ agent, onClose }) => {
               <span key={index} className="modal-service-tag">{service}</span>
             ))}
           </div>
+          
+          <div className="modal-footer">
+            <a 
+              href={agent.website} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="modal-view-detail-btn"
+            >
+              View Detail
+            </a>
+          </div>
         </div>
+
         <button className="modal-close-btn" onClick={onClose}>&times;</button>
       </div>
     </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import "./Contact.css";
-import supportIcon from "../assets/support-icon.png";
-import phoneIcon from "../assets/phone-icon.png";
-import briefcaseIcon from "../assets/cooperation.png";
-import branchIcon from "../assets/branch-icon.png";
+import supportIcon from "../assets/img/support-icon.png";
+import phoneIcon from "../assets/img/phone-icon.png";
+import briefcaseIcon from "../assets/img/cooperation.png";
+import branchIcon from "../assets/img/branch-icon.png";
 import Footer from "./Footer"
-import whyBizImage from "../assets/biz-image.jpg"; 
+import whyBizImage from "../assets/img/biz-image.jpg"; 
 
 const Contact = () => {
  return (
