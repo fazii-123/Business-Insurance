@@ -72,7 +72,7 @@ const BusinessInsurance = () => {
 
   return (
     <div className="page-container">
-      {/* Header */}
+
       <header className="header-section">
         <div className="header-content">
           <h1>Business Insurance</h1>
@@ -82,18 +82,17 @@ const BusinessInsurance = () => {
         </div>
       </header>
 
-      {/* Hero Image */}
       <main className="main-image-content">
         <div className="image-container">
           <img src={businessImage} alt="Business insurance illustration" />
         </div>
       </main>
 
-      {/* Layout */}
+  
       <div className="main-content-layout">
-        {/* Left Sidebar */}
+
         <aside className="left-sidebar">
-          {/* Promo Card */}
+
           <div className=" promo-box">
             <h4>Providing the Ultimate Experience in Financial Services</h4>
             <div className="contact-info">
@@ -106,7 +105,6 @@ const BusinessInsurance = () => {
             <button className="free-trial-btn">Get 15 Days Free Trial &rarr;</button>
           </div>
 
-          {/* Contact Form Card */}
           <div className="form-box">
             <h4>Speak to our Insurance Team</h4>
             <form onSubmit={handleSubmit}>
@@ -139,7 +137,6 @@ const BusinessInsurance = () => {
           </div>
         </aside>
 
-        {/* Center Content */}
         <section className="center-content">
           <h2>Comprehensive Coverage and Support</h2>
           <p>
@@ -168,7 +165,6 @@ const BusinessInsurance = () => {
           </div>
         </section>
 
-        {/* Right Sidebar */}
         <aside className="right-sidebar">
           <div className="sidebar-menu-box">
             <h4>Find a Insurance</h4>

@@ -293,12 +293,9 @@ const Home = () => {
           <p className="grow-clients">Grow your client base effortlessly!</p>
           <button className="join-btn">Join as an Agent →</button>
         </div>
-
-        {/* ✅ Modal */}
         {isModalOpen && <Modal agent={selectedAgent} onClose={closeModal} />}
       </div>
 
-      {/* Pricing Section */}
       <div className="pricing-page">
         <div className="pricing-header">
           <p className="offer-label">... OUR PRICING</p>

@@ -95,11 +95,12 @@ html, body {
 }
 
 .modal-title-tag {
-  font-size: 1.1rem;
-  color: var(--muted-gray);
+  font-size: 0.8rem;
+  color: #2D2727;
   margin-left: 8px;
   background-color: #f8f8f8;
   border-radius: 5px;
+  font-weight: 400;
 }
 
 .modal-description {
@@ -203,7 +204,6 @@ html, body {
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .modal-content {
     width: 100%;

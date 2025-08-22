@@ -76,7 +76,7 @@ const TaxiInsurance = () => {
 
   return (
     <div className="page-container">
-      {/* Header */}
+   
       <header className="header-section">
         <div className="header-content">
           <h1>Taxi Insurance</h1>
@@ -86,16 +86,14 @@ const TaxiInsurance = () => {
         </div>
       </header>
 
-      {/* Hero Image */}
       <main className="main-image-content">
         <div className="image-container">
           <img src={taxiInsurance} alt="Taxi Insurance in NYC" />
         </div>
       </main>
 
-      {/* Layout */}
       <div className="main-content-layout">
-        {/* Left Sidebar */}
+
         <aside className="left-sidebar">
           <div className="promo-box">
             <h4>Providing the Ultimate Experience in Financial Services</h4>
@@ -140,7 +138,6 @@ const TaxiInsurance = () => {
           </div>
         </aside>
 
-        {/* Center Content */}
         <section className="center-content">
           <h2>Comprehensive Coverage and Support</h2>
           <p>
@@ -172,7 +169,6 @@ const TaxiInsurance = () => {
           </div>
         </section>
 
-        {/* Right Sidebar */}
         <aside className="right-sidebar">
           <div className="sidebar-menu-box">
             <h4>Find a Insurance</h4>

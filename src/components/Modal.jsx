@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Modal.css';
 
 const Modal = ({ agent, onClose }) => {
@@ -27,16 +27,15 @@ const Modal = ({ agent, onClose }) => {
             <span className="modal-reviews"> ({agent.reviews}) Leave a review</span>
           </div>
           <p className="modal-location">{agent.location}</p>
-          <p className="modal-website">{agent.website}</p>
           <div className="modal-services">
             {agent.services.split(", ").map((service, index) => (
               <span key={index} className="modal-service-tag">{service}</span>
             ))}
           </div>
-          
+
           <div className="modal-footer">
             <a 
-              href={agent.website} 
+              href="/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="modal-view-detail-btn"

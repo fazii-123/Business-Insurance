@@ -112,7 +112,6 @@ const Contact = () => {
                 <p>Phone: (123) 456-1234</p>
               </div>
               <div className="contact-detail">
-                {/* Email SVG Icon */}
                 <svg
                   className="icon-svg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -182,9 +181,9 @@ const Contact = () => {
             />
           </div>
         </div>
-        {/* <div>
+        <div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.069146961683!2d74.26294437488542!3d31.439763274250943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919011903fb5d01%3A0x84223e5b8bcf419c!2sBitLogicx!5e0!3m2!1sen!2s!4v1755000395240!5m2!1sen!2s" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div> */}
+        </div>
       </section>
       <Footer />
     </div>
