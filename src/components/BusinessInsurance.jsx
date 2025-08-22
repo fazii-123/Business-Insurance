@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import "./BusinessInsurance.css";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaChevronDown, FaChevronUp, FaSearch } from "react-icons/fa";
 import businessImage from "../assets/businessImage.png";
 import phoneIcon from "../assets/phone-icon.png";
-import Footer from "./footer"
+import Footer from "./footer";
 
 const insuranceTypes = [
-  "Professional Liability Insurance",
-  "Commercial and Auto Insurance",
-  "Small Business Insurance",
-  "Business Umbrella Insurance",
-  "Workers' Compensation Insurance",
+  {
+    title: "Professional Liability Insurance",
+    description:
+      "Safeguards your business against claims of negligence or errors in professional services, covering legal fees and settlements.",
+  },
+  {
+    title: "Commercial and Auto Insurance",
+    description:
+      "Protects your business vehicles with coverage for accidents, theft, and liabilities, keeping your operations mobile and compliant.",
+  },
+  {
+    title: "Small Business Insurance",
+    description:
+      "Offers tailored coverage for small businesses, combining liability, property, and other protections to suit your unique needs.",
+  },
+  {
+    title: "Business Umbrella Insurance",
+    description:
+      "Extends coverage beyond standard policies, providing extra protection against large claims or lawsuits to safeguard your assets.",
+  },
+  {
+    title: "Workers' Compensation Insurance",
+    description:
+      "Provides coverage for employee injuries or illnesses, covering medical costs and lost wages to ensure workplace safety and compliance.",
+  },
 ];
 
 const policyList = [
@@ -23,6 +43,33 @@ const policyList = [
 ];
 
 const BusinessInsurance = () => {
+  const [activeIndex, setActiveIndex] = useState(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const toggleAccordion = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
+  const filteredPolicies = policyList.filter((policy) =>
+    policy.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleChange = (e) => {
+    const { name, value } = e.target; 
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.name || !formData.email || !formData.message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    setFormData({ name: "", email: "", message: "" });
+  };
+
   return (
     <div className="page-container">
       {/* Header */}
@@ -38,20 +85,17 @@ const BusinessInsurance = () => {
       {/* Hero Image */}
       <main className="main-image-content">
         <div className="image-container">
-          <img
-            src={businessImage}
-            alt="A smiling insurance agent talking to a client."
-          />
+          <img src={businessImage} alt="Business insurance illustration" />
         </div>
       </main>
 
-      {/* Layout: Left Sidebar | Center Content | Right Sidebar */}
+      {/* Layout */}
       <div className="main-content-layout">
         {/* Left Sidebar */}
         <aside className="left-sidebar">
-          <div className="promo-box">
+          {/* Promo Card */}
+          <div className=" promo-box">
             <h4>Providing the Ultimate Experience in Financial Services</h4>
-
             <div className="contact-info">
               <img src={phoneIcon} alt="Call Us" className="contact-icon" />
               <div>
@@ -59,18 +103,39 @@ const BusinessInsurance = () => {
                 <h5>+01 (24) 568 900</h5>
               </div>
             </div>
-
-            <button className="free-trial-btn">
-              Get 15 Days Free Trial &rarr;
-            </button>
+            <button className="free-trial-btn">Get 15 Days Free Trial &rarr;</button>
           </div>
 
+          {/* Contact Form Card */}
           <div className="form-box">
             <h4>Speak to our Insurance Team</h4>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your E-mail" />
-            <textarea placeholder="Write your message here" rows="4"></textarea>
-            <button className="send-message-btn">Send Message <span>&rarr;</span></button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                value={formData.name}
+                onChange={handleChange}
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your E-mail"
+                value={formData.email}
+                onChange={handleChange}
+              />
+              <textarea
+                name="message"
+                placeholder="Write your message here"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+              ></textarea>
+              <button className="send-message-btn">
+                Send Message <span>&rarr;</span>
+              </button>
+            </form>
+            {successMessage && <p className="success-msg">{successMessage}</p>}
           </div>
         </aside>
 
@@ -79,81 +144,60 @@ const BusinessInsurance = () => {
           <h2>Comprehensive Coverage and Support</h2>
           <p>
             At Business Insurance Exchange, we are dedicated to delivering
-            Business Insurance solutions that protect every aspect of your
-            operations. Our expert team combines industry knowledge with
-            personalized service to address your specific risks, ensuring robust
-            protection and seamless support.
+            solutions that protect every aspect of your operations. Our expert
+            team ensures robust protection and seamless support.
           </p>
 
-          <h3>Commercial and Auto Insurance</h3>
-          <p>
-            Protects your business vehicles with coverage for accidents, theft,
-            and liabilities, keeping your operations mobile and compliant.
-          </p>
-
-          <h3>Professional Liability Insurance</h3>
-          <p>
-            Safeguards your business against claims of negligence or errors in
-            professional services, covering legal fees and settlements.
-          </p>
-
-          <h3>Workers' Compensation Insurance</h3>
-          <p>
-            Provides coverage for employee injuries or illnesses, covering
-            medical costs and lost wages to ensure workplace safety and
-            compliance.
-          </p>
-
-          <h3>Protection and Peace of Mind</h3>
-          <p>
-            Keep your business secure with Business Insurance Exchange's
-            comprehensive Business Insurance solutions.{" "}
-            <a href="/Contact">Contact us today</a> to learn how we can tailor coverage
-            to protect your operations and support your growth with confidence.
-          </p>
-          <h3>Small Business Insurance</h3>
-          <p>
-            Offers tailored coverage for small businesses, combining liability, property, and other protections to suit your unique needs.
-          </p>
-          <h3>Business Umbrella Insurance</h3>
-          <p>
-            Extends coverage beyond standard policies, providing extra protection against large claims or lawsuits to safeguard your assets.
-          </p>
-          <h3>Business Owners Policy</h3>
-          <p>
-            Combines property, liability, and business interruption coverage into one convenient policy, streamlining protection for your business.
-          </p>
-          <hr />
-
+          <div className="accordion">
+            {insuranceTypes.map((item, index) => (
+              <div key={index} className="accordion-item">
+                <button
+                  className={`accordion-title ${activeIndex === index ? "active" : ""}`}
+                  onClick={() => toggleAccordion(index)}
+                >
+                  {item.title}
+                  {activeIndex === index ? <FaChevronUp /> : <FaChevronDown />}
+                </button>
+                {activeIndex === index && (
+                  <div className="accordion-content">
+                    <p>{item.description}</p>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Right Sidebar */}
         <aside className="right-sidebar">
           <div className="sidebar-menu-box">
-            {insuranceTypes.map((type, index) => (
-              <button
-                key={index}
-                className={`menu-button ${
-                  type === "Small Business Insurance" ? "active" : ""
-                }`}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-           <div className="policy-grid-center">
-            {policyList.map((policy, index) => (
-              <div key={index} className="policy-item-center">
-                <FaCheckCircle className="check-icon" />
-                <span>{policy}</span>
-              </div>
-            ))}
+            <h4>Find a Insurance</h4>
+            <div className="search-bar">
+              <FaSearch className="search-icon" />
+              <input
+                type="text"
+                placeholder="Search policy..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
+            <div className="policy-grid-center">
+              {filteredPolicies.length > 0 ? (
+                filteredPolicies.map((policy, index) => (
+                  <div key={index} className="policy-item-center">
+                    <FaCheckCircle className="check-icon" />
+                    <span>{policy}</span>
+                  </div>
+                ))
+              ) : (
+                <p className="no-results">No policies found.</p>
+              )}
+            </div>
           </div>
         </aside>
       </div>
-      <Footer/>
+      <Footer />
     </div>
-    
   );
 };
 
