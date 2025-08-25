@@ -452,25 +452,26 @@
   text-align: center;
 }
 
-.why-join-heading {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  text-align: left;
-}
-
 .why-join-list {
   list-style: none;
   padding: 0;
-  margin-bottom: 25px;
+  margin: 0;
+  text-align: center;
 }
 
 .why-join-list li {
-  display: flex;
-  align-items: flex-start;
   font-size: 15px;
   margin-bottom: 12px;
   color: #444;
+}
+
+
+.why-join-list li {
+
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: #444;
+  text-align: center;
 }
 
 .check-icon {
@@ -478,13 +479,14 @@
   margin-right: 10px;
   font-size: 18px;
   flex-shrink: 0;
+  text-align: center;
 }
 
 .grow-clients {
   font-size: 17px;
   font-weight: 500;
   margin: 20px 0;
-  text-align: left;
+  text-align: center;
 }
 
 .join-btn {

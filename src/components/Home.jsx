@@ -24,7 +24,7 @@ const agentData = [
     rating: 4.8,
     reviews: (9),
     location: "Washington D.C. in 1966",
-    services: "Business Insurance, Taxi Insurance, Auto Insurance",
+    services: "Business Insurance | Taxi Insurance | Auto Insurance",
     image: agent1,
   },
   {
@@ -36,7 +36,7 @@ const agentData = [
     reviews: (9),
     location: " New York in 1966",
 
-    services: "Small Business Insurance, Liability, Umbrella",
+    services: "Small Business Insurance | Liability | Umbrella",
     image: agent2,
   },
   {
@@ -48,7 +48,7 @@ const agentData = [
     reviews: 150,
     location: "Los Angeles, USA",
 
-    services: "Taxi Insurance, Fleet Insurance, Commercial Auto",
+    services: "Taxi Insurance | Fleet Insurance | Commercial Auto",
     image: agent3,
   },
   {
@@ -59,7 +59,7 @@ const agentData = [
     rating: 4.9,
     reviews: 200,
     location: "Houston, USA",
-    services: "Workers' Compensation, Umbrella, General Liability",
+    services: "Workers' Compensation | Umbrella | General Liability",
     image: agent4,
   },
 ];

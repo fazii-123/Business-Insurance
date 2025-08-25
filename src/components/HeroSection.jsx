@@ -18,7 +18,7 @@ const agentData = {
     reviews: 9,
     location: "Washington D.C. in 1966",
     website: "Agency website",
-    services: "Business Owners Policy, Small Business Insurance, Commercial and Auto Insurance",
+    services: "Business Owners Policy | Small Business Insurance | Commercial and Auto Insurance",
     image: agent1,
   },
   agent2: {
@@ -29,7 +29,7 @@ const agentData = {
     reviews: 9,
     location: "New York, in 1966",
     website: "Agency website",
-    services: "NYC Rideshare Insurance, Yellow Taxicab Insurance ,Black Car Insurance,Uber Insurance",
+    services: "NYC Rideshare Insurance | Yellow Taxicab Insurance | Black Car Insurance | Uber Insurance",
     image: agent2,
   },
   handshakeImg: {
@@ -40,7 +40,7 @@ const agentData = {
     reviews: 9,
     location: "Las Vegas in 1966",
     website: "Agency website",
-    services: "NYC Rideshare Insurance, Yellow Taxicab Insurance, Black Car Insurance, Uber Insurance",
+    services: "NYC Rideshare Insurance | Yellow Taxicab Insurance | Black Car Insuranc | Uber Insurance",
     image: handshakeImg,
   },
   chartImg: {
@@ -51,7 +51,7 @@ const agentData = {
     reviews: 15,
     location: "Chicago, IL",
     website: "Agency website",
-    services: "Risk Management, Business Continuity, Compliance Audits",
+    services: "Risk Management | Business Continuity | Compliance Audits",
     image: chartImg,
   },
   agent4: {
@@ -62,7 +62,7 @@ const agentData = {
     reviews: 7,
     location: "Austin, TX",
     website: "Agency website",
-    services: "Commercial Property, General Liability, Flood Insurance",
+    services: "Commercial Property | General Liability | Flood Insurance",
     image: agent4,
   },
   agent3: {
@@ -73,7 +73,7 @@ const agentData = {
     reviews: 11,
     location: "Seattle, WA",
     website: "Agency website",
-    services: "Health Insurance, Dental, Vision, Group Life",
+    services: "Health Insurance | Dental Vision | Group Life",
     image: agent3,
   },
 };

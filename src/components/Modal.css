@@ -55,6 +55,7 @@ html, body {
 }
 
 .recommended-tag {
+  width: 235px;
   font-size: 1rem;
   color: var(--dark-text-color);
   background: var(--muted-gray);
@@ -73,6 +74,7 @@ html, body {
   box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
   flex-shrink: 0;
   border-radius: 9px;
+  margin-bottom: 10px;
 }
 
 .modal-profile-img {
@@ -133,13 +135,11 @@ html, body {
 
 .modal-service-tag {
   display: inline-block;
-  background: var(--light-peach);
-  color: var(--dark-text-color);
   padding: 6px 12px;
   border-radius: 20px;
   font-size: 1rem;
   margin: 4px;
-  border: 1px solid var(--muted-gray);
+
 }
 
 

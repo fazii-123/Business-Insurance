@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import "./App.css";
 import BusinessInsurance from "./components/BusinessInsurance";
 import TaxiInsurance from "./components/TaxiInsurance";
+import AgencyDetails from "./components/AgencyDetails";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/business-insurance" element={<BusinessInsurance/>} />
           <Route path="/taxi-insurance" element={<TaxiInsurance/>} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/AgencyDetails" element={<AgencyDetails />} />
         </Routes>
       </main>
     </div>

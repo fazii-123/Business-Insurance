@@ -13,7 +13,6 @@
     font-family: 'Inter', sans-serif;
     position: relative;
     z-index: 100;
-    background: var(--base-color);
 }
 
 .header-logo img {
