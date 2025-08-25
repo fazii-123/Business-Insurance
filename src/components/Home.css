@@ -5,10 +5,14 @@
 }
 
 .hero-container {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 30px 8%;
   font-family: "Inter", sans-serif;
-  margin-left: 50px;
-  padding: 40px 20px;
+  color: #2d2727;
+  font-weight: 400;
 }
 
 .hero-title {
@@ -32,13 +36,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
   flex-wrap: wrap;
-  padding-left: 20px;
 }
 
 .image-card {
-  width: 160px;
+  width: 200px;
   height: 200px;
   border-radius: 20px;
   overflow: hidden;
@@ -62,21 +64,21 @@
   height: 300px;
 }
 #image2 {
-  transform: perspective(800px) rotateY(15deg) scale(0.95);
+  transform: perspective(700px) rotateY(15deg) scale(0.95);
   height: 250px;
 }
 #image3 {
-  transform: perspective(800px) rotateY(7deg) scale(1);
+  transform: perspective(600px) rotateY(8deg) scale(1);
   height: 210px;
 }
 #image4 {
-  transform: perspective(800px) rotateY(-7deg) scale(1);
+  transform: perspective(600px) rotateY(-8deg) scale(1);
   height: 210px;
 }
 #image5 {
-  transform: perspective(800px) rotateY(-15deg) scale(0.95);
+  transform: perspective(700px) rotateY(-15deg) scale(0.95); 
   height: 250px;
-}
+} 
 #image6 {
   transform: perspective(800px) rotateY(-25deg) scale(0.9);
   height: 300px;

@@ -82,8 +82,8 @@ const Home = () => {
 
   return (
     <div className="home-container">
+       <HeroSection />
       <div className="hero-section">
-        <HeroSection />
       </div>
       <div className="info-section">
         <div className="info-left">
