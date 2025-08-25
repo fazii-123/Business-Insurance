@@ -3,18 +3,19 @@ import "./AgencyDetails.css";
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import agent1 from "../assets/img/agent1.jpg";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const AgencyDetails = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
     <div className="agency-details-container">
-      <div className="agency-header">
-        <h2>Agency Details</h2>
-        <nav className="breadcrumb">
-          <a href="/">Home</a> &gt; <span>Agency</span>
-        </nav>
-      </div>
+       <div className="agency-header">
+          <h1>Agency Detail</h1>
+          <nav className="breadcrumb">
+            <a href="/">Home</a> &gt; <span>Agency Detail</span>
+          </nav>
+        </div>
 
       <div className="profile-card">
         <div className="profile-left">

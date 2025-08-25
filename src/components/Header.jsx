@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../assets/img/biz-logo.png";
+import { FaChevronDown } from "react-icons/fa";
 
 const Header = () => {
   return (
@@ -21,7 +22,7 @@ const Header = () => {
           <li className="dropdown">
             <Link to="/business-insurance" className="dropdown-link">
               <button className="dropdown-toggle">
-                Business Insurance <span className="arrow">▾</span>
+                Business Insurance <span className="arrow"><FaChevronDown/></span>
               </button>
             </Link>
             <div className="dropdown-menu">
@@ -51,7 +52,7 @@ const Header = () => {
           <li className="dropdown">
             <Link to="/taxi-insurance" className="dropdown-link">
               <button className="dropdown-toggle">
-                Taxi Insurance <span className="arrow">▾</span>
+                Taxi Insurance <span className="arrow"> <FaChevronDown/></span>
               </button>
             </Link>
             <div className="dropdown-menu">
