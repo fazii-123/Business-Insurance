@@ -5,6 +5,7 @@ import logo from "../assets/img/biz-logo.png";
 import { FaChevronDown } from "react-icons/fa";
 
 const Header = () => {
+   
   return (
     <header className="header">
       <div className="header-logo">
