@@ -237,31 +237,31 @@ const Home = () => {
             growing network.
           </p>
 
-          <div className="hero-images">
+          <div className="agent-image">
             <div
-              id="image1"
-              className="image-card"
+              id="agent-1"
+              className="agent-card"
               onClick={() => handleImageClick("agent1")}
             >
               <img src={agent1} alt="Person 1" />
             </div>
             <div
-              id="image2"
-              className="image-card"
+              id="agent-2"
+              className="agent-card"
               onClick={() => handleImageClick("agent2")}
             >
               <img src={agent2} alt="Person 2" />
             </div>
             <div
-              id="image5"
-              className="image-card"
+              id="agent-4"
+              className="agent-card"
               onClick={() => handleImageClick("agent4")}
             >
               <img src={agent4} alt="Person 5" />
             </div>
             <div
-              id="image6"
-              className="image-card"
+              id="agent-3"
+              className="agent-card"
               onClick={() => handleImageClick("agent3")}
             >
               <img src={agent3} alt="Person 6" />

@@ -142,4 +142,4 @@ const AgencyDetails = () => {
   );
 };
 
-export default Agent1;
+export default AgencyDetails;

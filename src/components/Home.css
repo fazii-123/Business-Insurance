@@ -46,7 +46,7 @@
   cursor: pointer;
   margin-left: 100px;
   margin-right: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .image-card img {
@@ -410,6 +410,7 @@
   transform: translateY(-2px);
 }
 
+
 .agents-section {
   display: flex;
   align-items: center;
@@ -419,6 +420,41 @@
   font-family: "Inter", sans-serif;
   color: #2d2727;
   font-weight: 400;
+}
+
+.agent-image {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 20px;            
+  flex-wrap: nowrap;      
+  margin-top: 20px;
+}
+
+#agent-1 {
+  transform: perspective(800px) rotateY(20deg) scale(0.9);
+}
+#agent-2 {
+  transform: perspective(700px) rotateY(12deg) scale(0.95);
+}
+#agent-3 {
+  transform: perspective(700px) rotateY(-12deg) scale(1);
+}
+#agent-4 {
+  transform: perspective(800px) rotateY(-20deg) scale(1);
+}
+
+.agent-card {
+  cursor: pointer;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.agent-card img {
+  width: 150px;  
+  height: auto;
+  border-radius: 10px;
 }
 
 .agents-content {
@@ -436,7 +472,6 @@
   margin-bottom: 20px;
   text-align: center;
 }
-
 .agents-heading {
   font-size: 36px;
   font-weight: 700;
