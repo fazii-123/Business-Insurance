@@ -117,13 +117,13 @@ const HeroSection = () => {
         </p>
 
         <div className="hero-swiper">
-          <Swiper
+          <Swiper className="mySwiper"
             modules={[Autoplay]}
             spaceBetween={10}
-            slidesPerView={4}
+            slidesPerView = {4} 
             loop={true}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
-            speed={900}
+            speed={1200}
           >
             <SwiperSlide>
               <div
