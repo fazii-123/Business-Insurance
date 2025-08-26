@@ -25,7 +25,7 @@ const agentData = {
     services:
       "Business Owners Policy | Small Business Insurance | Commercial and Auto Insurance",
     image: agent1,
-    link: "/agents/agent1",
+    link: "/components/agent1",
   },
   agent2: {
     name: "Agent James",
