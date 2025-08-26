@@ -6,7 +6,8 @@ import Contact from "./components/Contact";
 import "./App.css";
 import BusinessInsurance from "./components/BusinessInsurance";
 import TaxiInsurance from "./components/TaxiInsurance";
-import Agent1 from "./components/Agent1";   
+// 👇 Make sure this matches your actual file name (case-sensitive on Vercel)
+import Agent1 from "./components/Agent1.jsx";   
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/business-insurance" element={<BusinessInsurance/>} />
-          <Route path="/taxi-insurance" element={<TaxiInsurance/>} />
+          <Route path="/business-insurance" element={<BusinessInsurance />} />
+          <Route path="/taxi-insurance" element={<TaxiInsurance />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/components/Agent1" element={<Agent1 />} />
+          <Route path="/agents/agent1" element={<Agent1 />} />
         </Routes>
       </main>
     </div>
