@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./BusinessInsurance.css";
-import { FaCheckCircle, FaChevronDown, FaChevronUp, FaSearch } from "react-icons/fa";
+import {
+  FaCheckCircle,
+  FaChevronDown,
+  FaChevronUp,
+  FaSearch,
+} from "react-icons/fa";
 import businessImage from "../assets/img/businessImage.png";
 import phoneIcon from "../assets/img/phone-icon.png";
 import Footer from "./Footer";
@@ -45,7 +50,11 @@ const policyList = [
 const BusinessInsurance = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
-  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const [successMessage, setSuccessMessage] = useState("");
 
   const toggleAccordion = (index) => {
@@ -57,7 +66,7 @@ const BusinessInsurance = () => {
   );
 
   const handleChange = (e) => {
-    const { name, value } = e.target; 
+    const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
@@ -72,14 +81,14 @@ const BusinessInsurance = () => {
 
   return (
     <div className="page-container">
-
+      <header className="header-section">
         <div className="header-content">
           <h1>Business Insurance</h1>
           <nav className="breadcrumb">
             <a href="/">Home</a> &gt; <span>Business Insurance</span>
           </nav>
         </div>
-
+      </header>
 
       <main className="main-image-content">
         <div className="image-container">
@@ -87,11 +96,8 @@ const BusinessInsurance = () => {
         </div>
       </main>
 
-  
       <div className="main-content-layout">
-
         <aside className="left-sidebar">
-
           <div className=" promo-box">
             <h4>Providing the Ultimate Experience in Financial Services</h4>
             <div className="contact-info">
@@ -101,7 +107,9 @@ const BusinessInsurance = () => {
                 <h5>+01 (24) 568 900</h5>
               </div>
             </div>
-            <button className="free-trial-btn">Get 15 Days Free Trial &rarr;</button>
+            <button className="free-trial-btn">
+              Get 15 Days Free Trial &rarr;
+            </button>
           </div>
 
           <div className="form-box">
@@ -148,7 +156,9 @@ const BusinessInsurance = () => {
             {insuranceTypes.map((item, index) => (
               <div key={index} className="accordion-item">
                 <button
-                  className={`accordion-title ${activeIndex === index ? "active" : ""}`}
+                  className={`accordion-title ${
+                    activeIndex === index ? "active" : ""
+                  }`}
                   onClick={() => toggleAccordion(index)}
                 >
                   {item.title}
