@@ -423,9 +423,11 @@
   width: 100%;
   justify-content: center; 
   align-items: center;    
-  gap: 10px;
+  gap: 20px;
   border-radius: 10px solid #f8f8f8;
   margin-top: 20px;
+  padding: 20px;
+  margin-right: 10px;
 }
 
 #agent-1 {
