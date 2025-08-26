@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./agent1.css";
+import "./Agent1.css";
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import agent1 from "../assets/img/agent1.jpg";
 import Footer from "./Footer";
@@ -142,4 +142,4 @@ const AgencyDetails = () => {
   );
 };
 
-export default AgencyDetails;
+export default Agent1;
