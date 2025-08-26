@@ -92,13 +92,13 @@ const Home = () => {
           </h5>
           <div className="image-container">
             <img src={handshakeImg} alt="Handshake" className="info-image" />
-            <div className="stats-box">
+          </div>
+          <div className="stats-box">
               <h2>23k</h2>
               <p>Projects Completed</p>
               <h2>98k</h2>
               <p>Happy Clients</p>
             </div>
-          </div>
         </div>
 
         <div className="info-right">

@@ -73,14 +73,13 @@ const BusinessInsurance = () => {
   return (
     <div className="page-container">
 
-      <header className="header-section">
         <div className="header-content">
           <h1>Business Insurance</h1>
           <nav className="breadcrumb">
             <a href="/">Home</a> &gt; <span>Business Insurance</span>
           </nav>
         </div>
-      </header>
+
 
       <main className="main-image-content">
         <div className="image-container">

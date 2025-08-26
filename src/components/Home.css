@@ -29,23 +29,24 @@
 .hero-images {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 5px;
+  align-items: flex-end;
+  gap: 10px;          
   flex-wrap: wrap;
+  margin-top: 80px;  
 }
 
 .image-card {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
+  width: 220px;
+  height: 280px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
   flex-shrink: 0;
-  transition: transform 0.3s ease;
-}
-
-.image-card:hover {
-  transform: scale(1.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-right: 150px;
+  margin-bottom: 50px;
 }
 
 .image-card img {
@@ -54,30 +55,31 @@
   object-fit: cover;
 }
 
+.image-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+ 
 #image1 {
-  transform: perspective(800px) rotateY(25deg) scale(0.9);
-  height: 300px;
+  transform: perspective(800px) rotateY(20deg) scale(0.9);
 }
 #image2 {
-  transform: perspective(700px) rotateY(15deg) scale(0.95);
-  height: 250px;
+  transform: perspective(700px) rotateY(12deg) scale(0.95);
 }
 #image3 {
-  transform: perspective(600px) rotateY(8deg) scale(1);
-  height: 210px;
+  transform: perspective(600px) rotateY(5deg) scale(1);
 }
 #image4 {
-  transform: perspective(600px) rotateY(-8deg) scale(1);
-  height: 210px;
+  transform: perspective(600px) rotateY(-5deg) scale(1);
 }
 #image5 {
-  transform: perspective(700px) rotateY(-15deg) scale(0.95); 
-  height: 250px;
-} 
-#image6 {
-  transform: perspective(800px) rotateY(-25deg) scale(0.9);
-  height: 300px;
+  transform: perspective(700px) rotateY(-12deg) scale(0.95);
 }
+#image6 {
+  transform: perspective(800px) rotateY(-20deg) scale(0.9);
+}   
+
 
 .-search-bar {
   display: flex;
@@ -162,13 +164,15 @@
 .image-container {
   position: relative;
   display: inline-block;
+  object-fit: cover;
 }
 
 .info-image {
   width: 100%;
-  max-width: 350px;
-  border-radius: 12px;
+  max-width: 400px;
+
   margin-bottom: 50px;
+  object-fit: contain;
 }
 
 .stats-box {

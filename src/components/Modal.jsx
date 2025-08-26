@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './Modal.css';
+import "./Modal.css";
 
 const Modal = ({ agent, onClose }) => {
   if (!agent) return null;
@@ -9,10 +9,16 @@ const Modal = ({ agent, onClose }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-left-panel">
           <div className="modal-profile-img-container">
-            <img src={agent.image} alt={agent.name} className="modal-profile-img" />
+            <img
+              src={agent.image}
+              alt={agent.name}
+              className="modal-profile-img"
+            />
           </div>
           <div className="recommended-tag">
-            <span>&#9733;</span> RECOMMENDED LOCAL<br />AGENCY
+            <span>&#9733;</span> RECOMMENDED LOCAL
+            <br />
+            AGENCY
           </div>
         </div>
 
@@ -24,19 +30,24 @@ const Modal = ({ agent, onClose }) => {
 
           <div className="modal-rating">
             {"⭐".repeat(Math.floor(agent.rating))} {agent.rating}
-            <span className="modal-reviews"> ({agent.reviews}) Leave a review</span>
+            <span className="modal-reviews">
+              {" "}
+              ({agent.reviews}) Leave a review
+            </span>
           </div>
 
           <p className="modal-location">{agent.location}</p>
 
           <div className="modal-services">
             {agent.services.split(", ").map((service, index) => (
-              <span key={index} className="modal-service-tag">{service}</span>
+              <span key={index} className="modal-service-tag">
+                {service}
+              </span>
             ))}
           </div>
 
           <div className="modal-footer">
-            <Link to="/AgencyDetails" className="modal-view-detail-btn">
+            <Link to={agent.link} className="view-detail-btn">
               View Detail
             </Link>
           </div>
