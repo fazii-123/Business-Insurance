@@ -3,9 +3,9 @@ import "./Agent1.css";
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 import agent1 from "../assets/img/agent1.jpg";
 import Footer from "./Footer";
-import { Link } from "react-router-dom";
 
-const AgencyDetails = () => {
+
+const Agent1 = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
@@ -142,4 +142,4 @@ const AgencyDetails = () => {
   );
 };
 
-export default AgencyDetails;
+export default Agent1;
