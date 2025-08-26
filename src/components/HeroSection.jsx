@@ -25,7 +25,7 @@ const agentData = {
     services:
       "Business Owners Policy | Small Business Insurance | Commercial and Auto Insurance",
     image: agent1,
-    link: "/Agent1",
+    link: "/agents/Agent1",
   },
   agent2: {
     name: "Agent James",
@@ -115,7 +115,7 @@ const HeroSection = () => {
           Type your questions below to get instant, intelligent answers and find
           the perfect coverage for your business.
         </p>
-        {/* Swiper Carousel */}
+        
         <div className="hero-swiper">
           <Swiper
             modules={[Autoplay]}
