@@ -18,7 +18,6 @@ const Agent2 = () => {
         </nav>
       </div>
 
-      {/* Profile Section */}
       <div className="agent1-profile-card">
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
@@ -74,7 +73,6 @@ const Agent2 = () => {
         </div>
       </div>
 
-      {/* About Section */}
       <div className="agent1-about-section">
         <div className="left-info">
           <div className="recommend-box">

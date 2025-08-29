@@ -27,7 +27,7 @@
 }
 
 .image-card {
-  width: 220px;
+  width: 220px !important;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.6s ease, opacity 0.6s ease;
@@ -47,35 +47,35 @@
 
 .mySwiper .swiper-slide:nth-child(5n + 1) .image-card {
   transform: perspective(800px) rotateY(-30deg) scale(0.95);
-  height:380px;
+  height:400px;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 2) .image-card {
   transform: perspective(800px) rotateY(30deg) scale(0.95);
-  height: 380px;
+  height: 400px;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 3) .image-card {
   transform: perspective(900px) rotateY(30deg) scale(1);
-  height: 280px;
+  height: 300px;
    margin-top: 45px !important;
   z-index: 1;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 4) .image-card {
   transform: perspective(800px) rotateY(0deg) scale(0.95);
-  height: 270px;
+  height: 290px;
   margin-top: 50px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 5) .image-card {
   transform: perspective(900px) rotateY(-30deg) scale(1);
-  height: 280px;
+  height: 300px;
   margin-top: 45px !important;
   z-index: 2;
 }

@@ -10,7 +10,7 @@ const Agent1 = () => {
 
   return (
     <div className="agent1-container">
-      {/* Header */}
+
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
@@ -18,7 +18,6 @@ const Agent1 = () => {
         </nav>
       </div>
 
-      {/* Profile Section */}
       <div className="agent1-profile-card">
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
@@ -73,7 +72,6 @@ const Agent1 = () => {
         </div>
       </div>
 
-      {/* About Section */}
       <div className="agent1-about-section">
         <div className="left-info">
           <div className="recommend-box">

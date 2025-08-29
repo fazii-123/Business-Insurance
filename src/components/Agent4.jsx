@@ -70,14 +70,13 @@ const Agent4 = () => {
           </div>
         </div>
       </div>
-      
       <div className="agent1-about-section">
         <div className="left-info">
           <div className="recommend-box">
             <h3>30</h3>
             <p>
               We were recommended to <br /> INSURANCE SHOPPERS in the past 30
-              days.
+              days .
             </p>
           </div>
 

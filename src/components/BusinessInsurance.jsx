@@ -37,7 +37,6 @@ const insuranceTypes = [
       "Provides coverage for employee injuries or illnesses, covering medical costs and lost wages to ensure workplace safety and compliance.",
   },
 ];
-
 const policyList = [
   "Business Owners Policy",
   "Professional Liability Insurance",
@@ -46,7 +45,6 @@ const policyList = [
   "Workers' Compensation Insurance",
   "Commercial and Auto Insurance",
 ];
-
 const BusinessInsurance = () => {
   const [activeIndex, setActiveIndex] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
@@ -56,20 +54,16 @@ const BusinessInsurance = () => {
     message: "",
   });
   const [successMessage, setSuccessMessage] = useState("");
-
   const toggleAccordion = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
-
   const filteredPolicies = policyList.filter((policy) =>
     policy.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
@@ -78,7 +72,6 @@ const BusinessInsurance = () => {
     }
     setFormData({ name: "", email: "", message: "" });
   };
-
   return (
     <div className="page-container">
       <header className="header-section">
@@ -89,7 +82,6 @@ const BusinessInsurance = () => {
           </nav>
         </div>
       </header>
-
       <main className="main-image-content">
         <div className="image-container">
           <img src={businessImage} alt="Business insurance illustration" />
@@ -143,7 +135,6 @@ const BusinessInsurance = () => {
             {successMessage && <p className="success-msg">{successMessage}</p>}
           </div>
         </aside>
-
         <section className="center-content">
           <h2>Comprehensive Coverage and Support</h2>
           <p>
@@ -151,7 +142,6 @@ const BusinessInsurance = () => {
             solutions that protect every aspect of your operations. Our expert
             team ensures robust protection and seamless support.
           </p>
-
           <div className="accordion">
             {insuranceTypes.map((item, index) => (
               <div key={index} className="accordion-item">

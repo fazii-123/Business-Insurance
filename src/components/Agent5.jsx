@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Agent1.css"; // reuse same css
+import "./Agent1.css"; 
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import handshakeImg from "../assets/img/handshake.jpg"; // make sure this image exists
+import handshakeImg from "../assets/img/handshake.jpg"; 
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ const Agent5 = () => {
 
   return (
     <div className="agent1-container">
-      {/* Header */}
+ 
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
@@ -18,7 +18,7 @@ const Agent5 = () => {
         </nav>
       </div>
 
-      {/* Profile Section */}
+
       <div className="agent1-profile-card">
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
@@ -74,7 +74,6 @@ const Agent5 = () => {
         </div>
       </div>
 
-      {/* About Section */}
       <div className="agent1-about-section">
         <div className="left-info">
           <div className="recommend-box">

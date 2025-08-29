@@ -155,7 +155,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
       <section className="why-biz-section">
         <div className="container why-biz-container">
           <div className="why-biz-content">
@@ -198,5 +197,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;

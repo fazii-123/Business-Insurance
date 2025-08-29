@@ -10,7 +10,7 @@ const Agent3 = () => {
 
   return (
     <div className="agent1-container">
-      {/* Header */}
+
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
@@ -18,7 +18,7 @@ const Agent3 = () => {
         </nav>
       </div>
 
-      {/* Profile Section */}
+
       <div className="agent1-profile-card">
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
@@ -38,7 +38,7 @@ const Agent3 = () => {
               <FaStar
                 key={i}
                 className="star-icon"
-                color={i < 4.8 ? "#FFD700" : "#ccc"} // fill stars according to rating
+                color={i < 4.8 ? "#FFD700" : "#ccc"}
               />
             ))}
             <span>(11) Leave a review</span>
@@ -77,7 +77,6 @@ const Agent3 = () => {
         </div>
       </div>
 
-      {/* About Section */}
       <div className="agent1-about-section">
         <div className="left-info">
           <div className="recommend-box">

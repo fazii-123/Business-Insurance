@@ -45,7 +45,6 @@
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
-
 .contact-form-row {
     display: flex;
     justify-content: center;
@@ -53,7 +52,6 @@
     flex-wrap: wrap;
     margin-top: 20px;
 }
-
 .contact-card {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -63,22 +61,18 @@
     transition: transform 0.3s ease;
     flex-shrink: 0;
 }
-
 .contact-card.form-card,
 .contact-card.info-card {
     width: 400px;
     text-align: left;
 }
-
 .contact-card.form-card h3,
 .contact-card.info-card h3 {
     text-align: center;
 }
-
 .contact-card:hover {
     transform: translateY(-10px);
 }
-
 .icon-container {
     background-color: var(--muted-gray);
     border-radius: 50%;
@@ -90,12 +84,10 @@
     align-items: center;
     position: relative;
 }
-
 .icon-container img {
     width: 40px;
     height: 40px;
 }
-
 .icon-label {
     position: absolute;
     bottom: -15px;

@@ -6,11 +6,13 @@
   --dark-text-color: #2d2727;
 }
 
+
+
 .agent1-container {
   font-family: "Inter", sans-serif;
   color: var(--dark-text-color);
   background: var(--base-color);
-  line-height: 1.6;
+  line-height:  1.6;
 }
 
 

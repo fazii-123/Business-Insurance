@@ -194,7 +194,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Modal */}
       {isModalOpen && <Modal agent={selectedAgent} onClose={closeModal} />}
     </section>
   );
