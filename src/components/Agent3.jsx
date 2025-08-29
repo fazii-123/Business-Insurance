@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import "./Agent1.css"; 
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import agent2 from "../assets/img/agent2.jpg";
+import agent3 from "../assets/img/agent3.jpg"; 
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
-const Agent2 = () => {
+const Agent3 = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
     <div className="agent1-container">
-    
+      {/* Header */}
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
@@ -23,25 +23,29 @@ const Agent2 = () => {
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
           <div className="agent-photo">
-            <img src={agent2} alt="Agent James" />
+            <img src={agent3} alt="Agent Alex Lee" />
           </div>
         </div>
 
         <div className="profile-right">
           <h2>
-            Agent James <span className="badge">Financial Planning</span>
+            Alex Lee <span className="badge">Health and Benefits</span>
           </h2>
-          <p className="subtitle">Infiltration & Espionage</p>
+          <p className="subtitle">Custom health plans for your employees.</p>
 
           <div className="rating-row">
             {[...Array(5)].map((_, i) => (
-              <FaStar key={i} className="star-icon" />
+              <FaStar
+                key={i}
+                className="star-icon"
+                color={i < 4.8 ? "#FFD700" : "#ccc"} // fill stars according to rating
+              />
             ))}
-            <span>(9) Leave a review</span>
+            <span>(11) Leave a review</span>
           </div>
 
           <p className="location-text">
-            <FaMapMarkerAlt /> New York, in 1966
+            <FaMapMarkerAlt /> Seattle, WA
           </p>
 
           <p className="website">
@@ -49,10 +53,9 @@ const Agent2 = () => {
           </p>
 
           <div className="tags">
-            <span>NYC Rideshare Insurance | </span>
-            <span>Yellow Taxicab Insurance | </span>
-            <span>Black Car Insurance | </span>
-            <span>Uber Insurance</span>
+            <span>Health Insurance | </span>
+            <span>Dental Vision | </span>
+            <span>Group Life</span>
           </div>
 
           <div className="tabs">
@@ -60,7 +63,7 @@ const Agent2 = () => {
               "Overview",
               "Insurance Services",
               "Team Members",
-              "Reviews (9)",
+              "Reviews (11)",
             ].map((tab) => (
               <span
                 key={tab}
@@ -87,17 +90,17 @@ const Agent2 = () => {
 
           <div className="location-box">
             <h4>Location</h4>
-            <p>Agent James</p>
-            <p>New York</p>
-            <p>10001</p>
+            <p>Alex Lee</p>
+            <p>Seattle, WA</p>
+            <p>98101</p>
             <p>
-              <FaPhone /> +1 (212) 555-1966
+              <FaPhone /> +1 (206) 555-1966
             </p>
             <button className="direction-btn">Get Directions</button>
             <div className="map-box">
               <iframe
                 title="map"
-                src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Seattle&t=&z=13&ie=UTF8&iwloc=&output=embed"
               ></iframe>
             </div>
           </div>
@@ -106,40 +109,39 @@ const Agent2 = () => {
         <div className="right-info">
           <h3>About Our Agent</h3>
           <p>
-            Welcome to James Financial Services, your trusted partner in New
-            York since 1966. With decades of experience, we specialize in
-            providing tailored financial and insurance planning to meet the
-            unique needs of our clients.
+            Alex Lee specializes in employee health and benefits. Providing
+            custom health plans, dental, vision, and group life coverage,
+            Alex ensures your team is well-protected and satisfied.
           </p>
 
           <div className="features">
             <div className="feature-box">
-              <h4>Expert Financial Planning</h4>
+              <h4>Customized Health Plans</h4>
               <p>
-                From retirement planning to risk management, we help secure your
-                financial future.
+                Tailored solutions for your workforce to ensure maximum coverage
+                and peace of mind.
               </p>
             </div>
             <div className="feature-box">
-              <h4>Trusted Advisory</h4>
+              <h4>Trusted Advisor</h4>
               <p>
-                Our team works closely with you to ensure long-term stability
-                and success.
+                Alex guides you through insurance options to optimize benefits
+                and minimize costs.
               </p>
             </div>
           </div>
 
           <div className="stats">
             <div>
-              <h3>59+</h3>
+              <h3>10+</h3>
               <p>Years of Experience</p>
             </div>
             <div>
-              <h3>8K+</h3>
+              <h3>500+</h3>
               <p>Satisfied Clients</p>
             </div>
             <div>
-              <h3>97%</h3>
+              <h3>98%</h3>
               <p>Client Satisfaction</p>
             </div>
           </div>
@@ -151,4 +153,4 @@ const Agent2 = () => {
   );
 };
 
-export default Agent2;
+export default Agent3;

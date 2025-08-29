@@ -46,41 +46,36 @@
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 1) .image-card {
-  /* Left */
   transform: perspective(800px) rotateY(-30deg) scale(0.95);
-  height:360px;
+  height:380px;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 2) .image-card {
-  /* Left-center */
   transform: perspective(800px) rotateY(30deg) scale(0.95);
-  height: 360px;
+  height: 380px;
   margin-bottom: 20px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 3) .image-card {
-  /* Center */
   transform: perspective(900px) rotateY(30deg) scale(1);
-  height: 260px;
+  height: 280px;
    margin-top: 45px !important;
   z-index: 1;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 4) .image-card {
-  /* Right-center */
   transform: perspective(800px) rotateY(0deg) scale(0.95);
-  height: 250px;
+  height: 270px;
   margin-top: 50px;
   z-index: 2;
 }
 
 .mySwiper .swiper-slide:nth-child(5n + 5) .image-card {
-  /* Right */
   transform: perspective(900px) rotateY(-30deg) scale(1);
-  height: 260px;
+  height: 280px;
   margin-top: 45px !important;
   z-index: 2;
 }
