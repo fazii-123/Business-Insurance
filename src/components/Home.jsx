@@ -26,6 +26,7 @@ const agentData = [
     location: "Washington D.C. in 1966",
     services: "Business Insurance | Taxi Insurance | Auto Insurance",
     image: agent1,
+    link: "/agents/agent1",
   },
   {
     id: "agent2",
@@ -38,6 +39,7 @@ const agentData = [
 
     services: "Small Business Insurance | Liability | Umbrella",
     image: agent2,
+      link: "/agents/agent2",
   },
   {
     id: "agent3",
@@ -50,6 +52,7 @@ const agentData = [
 
     services: "Taxi Insurance | Fleet Insurance | Commercial Auto",
     image: agent3,
+      link: "/agents/agent3",
   },
   {
     id: "agent4",
@@ -61,6 +64,7 @@ const agentData = [
     location: "Houston, USA",
     services: "Workers' Compensation | Umbrella | General Liability",
     image: agent4,
+      link: "/agents/agent4",
   },
 ];
 

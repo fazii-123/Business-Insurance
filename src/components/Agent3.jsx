@@ -14,7 +14,7 @@ const Agent3 = () => {
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
-          <Link to="/">Home</Link> &gt; <span>Agency Detail</span>
+          <a href="/">Home</a> &gt; <span>Agency Detail</span>
         </nav>
       </div>
 

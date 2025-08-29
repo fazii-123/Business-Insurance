@@ -13,7 +13,7 @@ const Agent4 = () => {
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
-          <Link to="/">Home</Link> &gt; <span>Agency Detail</span>
+          <a to="/">Home</a> &gt; <span>Agency Detail</span>
         </nav>
       </div>
 
@@ -76,7 +76,7 @@ const Agent4 = () => {
             <h3>30</h3>
             <p>
               We were recommended to <br /> INSURANCE SHOPPERS in the past 30
-              days .
+              daa
             </p>
           </div>
 
