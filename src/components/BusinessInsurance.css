@@ -49,13 +49,13 @@
   font-weight: 700;
   color: var(--dark-text-color);
   margin-bottom: 10px;
-  padding-left: 180px;
+  padding-left: 145px;
 }
 
 .breadcrumb {
   font-size: 1.2em;
   color: var(--dark-text-color);
-  padding-left: 180px;
+  margin-left: 135px;
   font-weight: 400;
 }
 
@@ -97,10 +97,9 @@
   margin: 40px;
 }
 
-.left-sidebar,
-.right-sidebar {
+.left-sidebar{
   background: #fff;
-  padding: 24px;
+  padding: 14px;
   border-radius: 14px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
 }
@@ -109,6 +108,7 @@
   text-align: center;
   margin-bottom: 30px;
   text-align: left;
+
 }
 
 .contact-info {
@@ -216,6 +216,16 @@
   border-top: 1px solid var(--muted-gray);
 }
 
+.right-sidebar{
+  flex: 1;
+  min-width: 240px;
+  background: var(--base-color);
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
 .sidebar-menu-box h4 {
   font-size: x-large;
 }

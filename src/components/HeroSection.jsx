@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Home.css";
 import { FaSearch } from "react-icons/fa";
 import Modal from "./Modal";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -13,7 +12,7 @@ import agent4 from "../assets/img/agent4.jpg";
 import handshakeImg from "../assets/img/handshake.jpg";
 import chartImg from "../assets/img/chart.jpg";
 
-const agentData = {
+const agentsData = {
   agent1: {
     name: "Eliana Wilson",
     title: "Business Insurance",
@@ -25,7 +24,7 @@ const agentData = {
     services:
       "Business Owners Policy | Small Business Insurance | Commercial and Auto Insurance",
     image: agent1,
-    link: "/Agent1",
+    link: "/agents/agent1",
   },
   agent2: {
     name: "Agent James",
@@ -40,30 +39,17 @@ const agentData = {
     image: agent2,
     link: "/agents/agent2",
   },
-  handshakeImg: {
-    name: "Agent Leo",
-    title: "Taxi Insurance",
-    description: "Specialized coverage for taxi and rideshare fleets.",
-    rating: 5,
-    reviews: 9,
-    location: "Las Vegas in 1966",
+  agent3: {
+    name: "Alex Lee",
+    title: "Health and Benefits",
+    description: "Custom health plans for your employees.",
+    rating: 4.8,
+    reviews: 11,
+    location: "Seattle, WA",
     website: "Agency website",
-    services:
-      "NYC Rideshare Insurance | Yellow Taxicab Insurance | Black Car Insurance | Uber Insurance",
-    image: handshakeImg,
-    link: "/agents/agent-leo",
-  },
-  chartImg: {
-    name: "Agent Chris",
-    title: "Risk Analysis",
-    description: "Analyzing risks to secure your business.",
-    rating: 4.5,
-    reviews: 15,
-    location: "Chicago, IL",
-    website: "Agency website",
-    services: "Risk Management | Business Continuity | Compliance Audits",
-    image: chartImg,
-    link: "/agents/agent-chris",
+    services: "Health Insurance | Dental Vision | Group Life",
+    image: agent3,
+    link: "/agents/agent3",
   },
   agent4: {
     name: "Jane Smith",
@@ -77,17 +63,30 @@ const agentData = {
     image: agent4,
     link: "/agents/agent4",
   },
-  agent3: {
-    name: "Alex Lee",
-    title: "Health and Benefits",
-    description: "Custom health plans for your employees.",
-    rating: 4.8,
-    reviews: 11,
-    location: "Seattle, WA",
+  agent5: {
+    name: "Agent Leo",
+    title: "Taxi Insurance",
+    description: "Specialized coverage for taxi and rideshare fleets.",
+    rating: 5,
+    reviews: 9,
+    location: "Las Vegas in 1966",
     website: "Agency website",
-    services: "Health Insurance | Dental Vision | Group Life",
-    image: agent3,
-    link: "/agents/agent3",
+    services:
+      "NYC Rideshare Insurance | Yellow Taxicab Insurance | Black Car Insurance | Uber Insurance",
+    image: handshakeImg,
+    link: "/agents/agent-leo",
+  },
+  agent6: {
+    name: "Agent Chris",
+    title: "Risk Analysis",
+    description: "Analyzing risks to secure your business.",
+    rating: 4.5,
+    reviews: 15,
+    location: "Chicago, IL",
+    website: "Agency website",
+    services: "Risk Management | Business Continuity | Compliance Audits",
+    image: chartImg,
+    link: "/agents/agent-chris",
   },
 };
 
@@ -96,7 +95,7 @@ const HeroSection = () => {
   const [selectedAgent, setSelectedAgent] = useState(null);
 
   const handleImageClick = (agentKey) => {
-    setSelectedAgent(agentData[agentKey]);
+    setSelectedAgent(agentsData[agentKey]);
     setIsModalOpen(true);
   };
 
@@ -117,17 +116,17 @@ const HeroSection = () => {
         </p>
 
         <div className="hero-swiper">
-          <Swiper className="mySwiper"
+          <Swiper
+            className="mySwiper"
             modules={[Autoplay]}
-            spaceBetween={10}
-            slidesPerView = {4} 
+            spaceBetween={0}
+            slidesPerView={5}
             loop={true}
             autoplay={{ delay: 2500, disableOnInteraction: false }}
             speed={1200}
           >
             <SwiperSlide>
               <div
-                id="image1"
                 className="image-card"
                 onClick={() => handleImageClick("agent1")}
               >
@@ -136,7 +135,6 @@ const HeroSection = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                id="image2"
                 className="image-card"
                 onClick={() => handleImageClick("agent2")}
               >
@@ -145,25 +143,22 @@ const HeroSection = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                id="image3"
                 className="image-card"
-                onClick={() => handleImageClick("handshakeImg")}
+                onClick={() => handleImageClick("agent5")}
               >
                 <img src={handshakeImg} alt="Handshake" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div
-                id="image4"
                 className="image-card"
-                onClick={() => handleImageClick("chartImg")}
+                onClick={() => handleImageClick("agent6")}
               >
                 <img src={chartImg} alt="Chart" />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div
-                id="image5"
                 className="image-card"
                 onClick={() => handleImageClick("agent4")}
               >
@@ -172,7 +167,6 @@ const HeroSection = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                id="image6"
                 className="image-card"
                 onClick={() => handleImageClick("agent3")}
               >
@@ -182,7 +176,7 @@ const HeroSection = () => {
           </Swiper>
         </div>
 
-          <div className=" -search-bar">
+        <div className="search-bar">
           <input
             type="text"
             placeholder="How much does TLC insurance cost for fleet?"
@@ -200,6 +194,7 @@ const HeroSection = () => {
         </div>
       </div>
 
+      {/* Modal */}
       {isModalOpen && <Modal agent={selectedAgent} onClose={closeModal} />}
     </section>
   );

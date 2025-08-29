@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./Agent1.css";
+import "./Agent1.css"; // reuse same css
 import { FaStar, FaGlobe, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
-import agent1 from "../assets/img/agent1.jpg";
+import agent2 from "../assets/img/agent2.jpg";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 
-const Agent1 = () => {
+const Agent2 = () => {
   const [activeTab, setActiveTab] = useState("Overview");
 
   return (
@@ -14,7 +14,7 @@ const Agent1 = () => {
       <div className="agent1-header">
         <h1>Agent Detail</h1>
         <nav className="breadcrum">
-          <Link href="/">Home</Link> &gt; <span>Agency Detail</span>
+          <Link to="/">Home</Link> &gt; <span>Agency Detail</span>
         </nav>
       </div>
 
@@ -23,15 +23,15 @@ const Agent1 = () => {
         <div className="profile-left">
           <span className="recommended-tag">RECOMMENDED LOCAL AGENT</span>
           <div className="agent-photo">
-            <img src={agent1} alt="Agent Eliana Wilson" />
+            <img src={agent2} alt="Agent James" />
           </div>
         </div>
 
         <div className="profile-right">
           <h2>
-            Eliana Wilson <span className="badge">Business Insurance</span>
+            Agent James <span className="badge">Financial Planning</span>
           </h2>
-          <p className="subtitle">Voluptate veniam mo</p>
+          <p className="subtitle">Infiltration & Espionage</p>
 
           <div className="rating-row">
             {[...Array(5)].map((_, i) => (
@@ -41,7 +41,7 @@ const Agent1 = () => {
           </div>
 
           <p className="location-text">
-            <FaMapMarkerAlt /> Washington D.C. in 1966
+            <FaMapMarkerAlt /> New York, in 1966
           </p>
 
           <p className="website">
@@ -49,9 +49,10 @@ const Agent1 = () => {
           </p>
 
           <div className="tags">
-            <span>Business Owners Policy | </span>
-            <span>Small Business Insurance | </span>
-            <span>Commercial and Auto Insurance</span>
+            <span>NYC Rideshare Insurance | </span>
+            <span>Yellow Taxicab Insurance | </span>
+            <span>Black Car Insurance | </span>
+            <span>Uber Insurance</span>
           </div>
 
           <div className="tabs">
@@ -86,17 +87,17 @@ const Agent1 = () => {
 
           <div className="location-box">
             <h4>Location</h4>
-            <p>Eliana Wilson</p>
-            <p>Washington D.C.</p>
-            <p>20003</p>
+            <p>Agent James</p>
+            <p>New York</p>
+            <p>10001</p>
             <p>
-              <FaPhone /> +1 (458) 173-3073
+              <FaPhone /> +1 (212) 555-1966
             </p>
             <button className="direction-btn">Get Directions</button>
             <div className="map-box">
               <iframe
                 title="map"
-                src="https://maps.google.com/maps?q=Washington%20DC&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=New%20York&t=&z=13&ie=UTF8&iwloc=&output=embed"
               ></iframe>
             </div>
           </div>
@@ -105,48 +106,49 @@ const Agent1 = () => {
         <div className="right-info">
           <h3>About Our Agent</h3>
           <p>
-            Welcome to Raleigh Insurance Agency, your trusted insurance partner
-            in Saint Albans since 1966. With over 55 years of experience, we've
-            been providing comprehensive insurance solutions tailored to our
-            community's needs.
+            Welcome to James Financial Services, your trusted partner in New
+            York since 1966. With decades of experience, we specialize in
+            providing tailored financial and insurance planning to meet the
+            unique needs of our clients.
           </p>
 
           <div className="features">
             <div className="feature-box">
-              <h4>Comprehensive Coverage</h4>
+              <h4>Expert Financial Planning</h4>
               <p>
-                We offer a wide range of insurance products to protect what
-                matters most to you.
+                From retirement planning to risk management, we help secure your
+                financial future.
               </p>
             </div>
             <div className="feature-box">
-              <h4>Personal Service</h4>
+              <h4>Trusted Advisory</h4>
               <p>
-                Our dedicated team provides personalized attention to meet your
-                unique insurance needs.
+                Our team works closely with you to ensure long-term stability
+                and success.
               </p>
             </div>
           </div>
 
           <div className="stats">
             <div>
-              <h3>55+</h3>
+              <h3>59+</h3>
               <p>Years of Experience</p>
             </div>
             <div>
-              <h3>10K+</h3>
+              <h3>8K+</h3>
               <p>Satisfied Clients</p>
             </div>
             <div>
-              <h3>98%</h3>
+              <h3>97%</h3>
               <p>Client Satisfaction</p>
             </div>
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
 };
 
-export default Agent1;
+export default Agent2;
